@@ -2985,4 +2985,104 @@ section,
     font-size: 15px;
   }
 }
+/* =================================
+   STRUKTUR ORGANISASI PT MUJUR TIMBER
+================================= */
 
+.mt-org-chart {
+  width: 100%;
+  overflow-x: auto;
+  padding: 35px 15px;
+}
+
+.mt-org-chart .org-inner {
+  min-width: 1100px;
+  width: max-content;
+  margin: 0 auto;
+  text-align: center;
+  color: #333;
+}
+
+.mt-org-chart .org-box {
+  display: inline-block;
+  background: #fff;
+  border: 1.5px solid #b58b52;
+  border-radius: 6px;
+  padding: 10px 14px;
+  min-width: 160px;
+  max-width: 210px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  box-shadow: 0 2px 7px rgba(0,0,0,.07);
+}
+
+.mt-org-chart .org-top {
+  background: #b58b52;
+  color: #fff;
+  border-color: #b58b52;
+}
+
+.mt-org-chart .org-line {
+  width: 2px;
+  height: 24px;
+  background: #b58b52;
+  margin: auto;
+}
+
+.mt-org-chart .org-subline {
+  width: 2px;
+  height: 20px;
+  background: #b58b52;
+}
+
+.mt-org-chart .org-branches {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  align-items: start;
+  position: relative;
+  padding-top: 28px;
+}
+
+.mt-org-chart .org-branches::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  right: 12.5%;
+  height: 2px;
+  background: #b58b52;
+}
+
+.mt-org-chart .org-branch {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mt-org-chart .org-branch::before {
+  content: "";
+  position: absolute;
+  top: -28px;
+  height: 28px;
+  width: 2px;
+  background: #b58b52;
+}
+
+.mt-org-chart .org-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mt-org-chart .org-list .org-box {
+  min-width: 165px;
+}
+
+@media (max-width: 768px) {
+  .mt-org-chart {
+    padding: 20px 0;
+  }
+}
