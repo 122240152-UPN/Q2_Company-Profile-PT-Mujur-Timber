@@ -1955,9 +1955,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 /* Judul ketiga slide rata tengah */
 #hero .carousel-container h2 {
@@ -3153,149 +3150,216 @@ section,
   background-color: #b71e19;
 }
 /* ==========================================
-   PERBAIKAN FORMULIR KONTAK
+   PERAPIAN FORMULIR KONTAK
+   Mengikuti variabel desain utama website
 ========================================== */
 
-#contact .mt-form-group {
-  display: flex !important;
-  flex-direction: column !important;
+#contact .mt-contact-form {
   width: 100%;
-  margin-bottom: 20px;
+}
+
+#contact .mt-contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+#contact .mt-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+  gap: 7px;
 }
 
 #contact .mt-form-group label {
-  display: block !important;
+  display: block;
   width: 100%;
-  margin-bottom: 8px;
-  color: #e32620;
-  font-family: inherit;
+  margin: 0;
+  color: var(--heading-color);
+  font-family: var(--default-font);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 #contact .mt-form-group input,
 #contact .mt-form-group textarea {
-  display: block !important;
-  width: 100% !important;
+  display: block;
+  width: 100%;
+  min-width: 0;
   box-sizing: border-box;
-  font-family: inherit;
+  margin: 0;
+  font-family: var(--default-font);
+  font-size: 15px;
+}
+
+#contact .mt-form-group textarea {
+  min-height: 150px;
 }
 
 #contact .mt-submit-btn {
-  display: flex !important;
   width: 100%;
-  font-family: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--heading-font);
+  font-weight: 600;
 }
 
 
 /* ==========================================
-   CALL TO ACTION - JELAJAHI PRODUK
-   Identitas visual Mujur Timber
+   PERAPIAN CALL TO ACTION PRODUK
+   Mempertahankan identitas visual website
 ========================================== */
 
 #call-to-action.produk-cta-section {
-  background: #12213b;
-  padding: 65px 0;
-  color: #ffffff;
+  position: relative;
   overflow: hidden;
+  background-color: var(--heading-color);
+  color: var(--contrast-color);
+}
+
+#call-to-action .container {
+  position: relative;
+  z-index: 1;
+}
+
+#call-to-action .row {
+  align-items: center;
 }
 
 #call-to-action .produk-cta-label {
   display: inline-block;
-  margin-bottom: 15px;
-  color: #ef4b2d;
-  font-size: 14px;
-  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--accent-color);
+  font-family: var(--nav-font);
+  font-size: 13px;
+  font-weight: 600;
   letter-spacing: 1.5px;
+  line-height: 1.6;
 }
 
 #call-to-action h2 {
-  color: #ffffff;
-  font-family: inherit;
+  margin-bottom: 18px;
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
   font-size: 32px;
   font-weight: 700;
-  line-height: 1.3;
-  margin-bottom: 20px;
+  line-height: 1.35;
 }
 
 #call-to-action h2 span {
-  color: #ef4b2d;
+  display: block;
+  color: var(--accent-color);
 }
 
 #call-to-action p {
-  color: #e1e5eb;
-  font-size: 15px;
-  line-height: 1.75;
+  max-width: 650px;
   margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--default-font);
+  font-size: 15px;
+  line-height: 1.8;
 }
 
 #call-to-action .produk-cta-button {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   gap: 12px;
-  padding: 12px 28px;
-  background: #ef4b2d;
-  color: #ffffff;
-  border: 1px solid #ef4b2d;
+  padding: 12px 25px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
-  font-family: inherit;
-  font-size: 15px;
+  font-family: var(--heading-font);
+  font-size: 14px;
   font-weight: 600;
+  line-height: 1.5;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 #call-to-action .produk-cta-button:hover {
-  background: transparent;
-  color: #ef4b2d;
+  background-color: transparent;
+  color: var(--accent-color);
 }
 
 #call-to-action .produk-cta-visual {
   position: relative;
-  min-height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 260px;
 }
 
 #call-to-action .produk-cta-circle {
-  width: 160px;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #ef4b2d;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.06);
-  color: #ef4b2d;
-  font-size: 65px;
+  position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.06);
+  color: var(--accent-color);
+  font-size: 60px;
 }
 
 #call-to-action .produk-cta-decoration {
   position: absolute;
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
+  pointer-events: none;
 }
 
 #call-to-action .decoration-one {
-  width: 210px;
-  height: 210px;
+  width: 200px;
+  height: 200px;
 }
 
 #call-to-action .decoration-two {
-  width: 260px;
-  height: 260px;
+  width: 250px;
+  height: 250px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+  #call-to-action .produk-cta-visual {
+    min-height: 220px;
+  }
 }
 
 @media (max-width: 767px) {
-  #call-to-action.produk-cta-section {
-    padding: 45px 0;
-  }
-
   #call-to-action h2 {
     font-size: 26px;
   }
 
   #call-to-action .produk-cta-visual {
-    min-height: 200px;
+    min-height: 190px;
+  }
+
+  #call-to-action .produk-cta-circle {
+    width: 125px;
+    height: 125px;
+    font-size: 50px;
+  }
+
+  #call-to-action .decoration-one {
+    width: 175px;
+    height: 175px;
+  }
+
+  #call-to-action .decoration-two {
+    width: 215px;
+    height: 215px;
   }
 }
