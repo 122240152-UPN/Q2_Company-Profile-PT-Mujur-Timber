@@ -3003,7 +3003,7 @@ section,
 .mt-org-chart .org-box {
   display: inline-block;
   background: #fff;
-  border: 1.5px solid #f28c28;
+  border: 1.5px solid #dc3545;
   border-radius: 6px;
   padding: 10px 14px;
   min-width: 160px;
@@ -3015,22 +3015,22 @@ section,
 }
 
 .mt-org-chart .org-top {
-  background: #f28c28;
+  background: #dc3545;
   color: #fff;
-  border-color: #f28c28;
+  border-color: #dc3545;
 }
 
 .mt-org-chart .org-line {
   width: 2px;
   height: 24px;
-  background: #f28c28;
+  background: #dc3545;
   margin: auto;
 }
 
 .mt-org-chart .org-subline {
   width: 2px;
   height: 20px;
-  background: #f28c28;
+  background: #dc3545;
 }
 
 .mt-org-chart .org-branches {
@@ -3049,7 +3049,7 @@ section,
   left: calc(12.5% - 10px);
   right: calc(12.5% - 10px);
   height: 2px;
-  background: #f28c28;
+  background: #dc3545;
   z-index: 1;
 }
 
@@ -3066,7 +3066,7 @@ section,
   top: -29px;
   height: 30px;
   width: 2px;
-  background: #f28c28;
+  background: #dc3545;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -3426,7 +3426,7 @@ section,
 }
 /* Warna label formulir kontak */
 #contact .mt-form-group label {
-    color: #f28c28;
+    color: #dc3545;
 }
 
 /* Warna tanda bintang wajib isi */
