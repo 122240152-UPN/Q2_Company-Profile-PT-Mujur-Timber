@@ -3003,7 +3003,7 @@ section,
 .mt-org-chart .org-box {
   display: inline-block;
   background: #fff;
-  border: 1.5px solid #b58b52;
+  border: 1.5px solid #f28c28;
   border-radius: 6px;
   padding: 10px 14px;
   min-width: 160px;
@@ -3015,22 +3015,22 @@ section,
 }
 
 .mt-org-chart .org-top {
-  background: #b58b52;
+  background: #f28c28;
   color: #fff;
-  border-color: #b58b52;
+  border-color: #f28c28;
 }
 
 .mt-org-chart .org-line {
   width: 2px;
   height: 24px;
-  background: #b58b52;
+  background: #f28c28;
   margin: auto;
 }
 
 .mt-org-chart .org-subline {
   width: 2px;
   height: 20px;
-  background: #b58b52;
+  background: #f28c28;
 }
 
 .mt-org-chart .org-branches {
@@ -3046,10 +3046,11 @@ section,
   content: "";
   position: absolute;
   top: 0;
-  left: 12.5%;
-  right: 12.5%;
+  left: calc(12.5% - 10px);
+  right: calc(12.5% - 10px);
   height: 2px;
-  background: #b58b52;
+  background: #f28c28;
+  z-index: 1;
 }
 
 .mt-org-chart .org-branch {
@@ -3062,10 +3063,13 @@ section,
 .mt-org-chart .org-branch::before {
   content: "";
   position: absolute;
-  top: -28px;
-  height: 28px;
+  top: -29px;
+  height: 30px;
   width: 2px;
-  background: #b58b52;
+  background: #f28c28;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
 .mt-org-chart .org-list {
@@ -3428,4 +3432,16 @@ section,
 /* Warna tanda bintang wajib isi */
 #contact .mt-form-group label .required {
     color: red;
+}
+/* Membuat seluruh teks penjelasan menjadi justify */
+p {
+    text-align: justify;
+}
+/* Membuat empat informasi sejarah menjadi rata tengah */
+#about .stats-item p {
+    text-align: center;
+}
+/* Teks pada timeline sejarah dibuat rata tengah */
+#sejarah .history-card p {
+    text-align: center;
 }
