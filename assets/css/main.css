@@ -3363,3 +3363,69 @@ section,
     height: 215px;
   }
 }
+/* PERBAIKAN SUSUNAN FORMULIR KONTAK */
+#contact .mt-contact-form {
+  width: 100%;
+}
+
+#contact .mt-contact-form h3 {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+#contact .mt-contact-form > p {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+#contact .mt-contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  gap: 16px;
+}
+
+#contact .mt-contact-form .mt-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+  gap: 7px;
+}
+
+#contact .mt-contact-form .mt-form-group label {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+#contact .mt-contact-form .mt-form-group input,
+#contact .mt-contact-form .mt-form-group textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#contact .mt-contact-form .mt-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  width: auto;
+}
+/* Warna label formulir kontak */
+#contact .mt-form-group label {
+    color: #f28c28;
+}
+
+/* Warna tanda bintang wajib isi */
+#contact .mt-form-group label .required {
+    color: red;
+}
