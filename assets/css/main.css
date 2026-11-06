@@ -2032,7 +2032,7 @@ section,
    PRODUCTS SECTION - MUJUR TIMBER
 ========================================= */
 
-#portfolio .section-title {
+#produk .section-title {
   padding-bottom: 25px;
 }
 
@@ -2044,7 +2044,7 @@ section,
 ========================================= */
 
 /* Radio button */
-#portfolio .mt-state {
+#produk .mt-state {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -2052,21 +2052,21 @@ section,
 }
 
 /* Area utama */
-#portfolio .mt-products-shell {
+#produk .mt-products-shell {
   position: relative;
   padding-top: 290px;
   transition: padding-top 0.55s ease;
 }
 
 /* Ketika produk dipilih */
-#portfolio .mt-products-shell:has(#mt-marine:checked),
-#portfolio .mt-products-shell:has(#mt-ordinary:checked),
-#portfolio .mt-products-shell:has(#mt-overlay:checked) {
+#produk .mt-products-shell:has(#mt-marine:checked),
+#produk .mt-products-shell:has(#mt-ordinary:checked),
+#produk .mt-products-shell:has(#mt-overlay:checked) {
   padding-top: 335px;
 }
 
 /* Hilangkan pembatas flex lama */
-#portfolio .mt-products-top {
+#produk .mt-products-top {
   display: contents;
 }
 
@@ -2074,7 +2074,7 @@ section,
    TIGA CARD - POSISI AWAL
 ========================================= */
 
-#portfolio .mt-top-card {
+#produk .mt-top-card {
   position: absolute;
   top: 0;
 
@@ -2107,22 +2107,22 @@ section,
 }
 
 /* Marine - kiri */
-#portfolio .mt-top-card[for="mt-marine"] {
+#produk .mt-top-card[for="mt-marine"] {
   left: 0;
 }
 
 /* Ordinary - tengah */
-#portfolio .mt-top-card[for="mt-ordinary"] {
+#produk .mt-top-card[for="mt-ordinary"] {
   left: calc(33.333333% + 8px);
 }
 
 /* Overlay - kanan */
-#portfolio .mt-top-card[for="mt-overlay"] {
+#produk .mt-top-card[for="mt-overlay"] {
   left: calc(66.666667% + 16px);
 }
 
 /* Gambar produk */
-#portfolio .mt-top-image {
+#produk .mt-top-image {
   width: 100%;
   height: 190px;
 
@@ -2136,7 +2136,7 @@ section,
   transition: height 0.6s ease;
 }
 
-#portfolio .mt-top-image img {
+#produk .mt-top-image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -2144,7 +2144,7 @@ section,
 }
 
 /* Judul card */
-#portfolio .mt-top-card h3 {
+#produk .mt-top-card h3 {
   font-size: 21px;
   font-weight: 700;
   color: #12213b;
@@ -2152,7 +2152,7 @@ section,
 }
 
 /* Hover */
-#portfolio .mt-top-card:hover {
+#produk .mt-top-card:hover {
   border-color: #ef4b2d;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
@@ -2243,7 +2243,7 @@ section,
    PANEL PENJELASAN DI KANAN BAWAH
 ========================================= */
 
-#portfolio .mt-product-panel {
+#produk .mt-product-panel {
   display: none;
 
   position: relative;
@@ -2269,21 +2269,21 @@ section,
 
 /* Sembunyikan gambar duplikat di panel */
 /* Gambar aslinya sudah bergerak ke kiri */
-#portfolio .mt-panel-image {
+#produk .mt-panel-image {
   display: none !important;
 }
 
 /* Teks memakai seluruh lebar panel */
-#portfolio .mt-panel-grid {
+#produk .mt-panel-grid {
   display: block;
 }
 
-#portfolio .mt-panel-text {
+#produk .mt-panel-text {
   width: 100%;
 }
 
 /* Tombol kembali */
-#portfolio .mt-back-btn {
+#produk .mt-back-btn {
   display: inline-flex;
   align-items: center;
   gap: 9px;
@@ -2298,12 +2298,12 @@ section,
   transition: color 0.3s ease;
 }
 
-#portfolio .mt-back-btn:hover {
+#produk .mt-back-btn:hover {
   color: #bf321b;
 }
 
 /* Judul detail */
-#portfolio .mt-panel-text h3 {
+#produk .mt-panel-text h3 {
   font-size: 28px;
   font-weight: 800;
   color: #12213b;
@@ -2312,7 +2312,7 @@ section,
 }
 
 /* Deskripsi */
-#portfolio .mt-panel-text p {
+#produk .mt-panel-text p {
   font-size: 16px;
   line-height: 1.75;
   color: #556270;
@@ -2321,20 +2321,20 @@ section,
 }
 
 /* Spesifikasi */
-#portfolio .mt-panel-text ul {
+#produk .mt-panel-text ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#portfolio .mt-panel-text ul li {
+#produk .mt-panel-text ul li {
   font-size: 15px;
   line-height: 1.75;
   color: #556270;
   margin-bottom: 10px;
 }
 
-#portfolio .mt-panel-text ul li strong {
+#produk .mt-panel-text ul li strong {
   color: #12213b;
 }
 
@@ -2357,18 +2357,18 @@ section,
 
 @media (max-width: 991px) {
 
-  #portfolio .mt-products-shell {
+  #produk .mt-products-shell {
     padding-top: 0 !important;
   }
 
-  #portfolio .mt-products-top {
+  #produk .mt-products-top {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
   }
 
-  #portfolio .mt-top-card {
+  #produk .mt-top-card {
     position: relative !important;
     top: auto !important;
     left: auto !important;
@@ -2380,16 +2380,16 @@ section,
     padding: 15px;
   }
 
-  #portfolio .mt-top-image,
-  #portfolio .mt-top-card .mt-top-image {
+  #produk .mt-top-image,
+  #produk .mt-top-card .mt-top-image {
     height: 150px !important;
   }
 
-  #portfolio .mt-top-card h3 {
+  #produk .mt-top-card h3 {
     font-size: 18px !important;
   }
 
-  #portfolio .mt-product-panel {
+  #produk .mt-product-panel {
     width: 100%;
     margin-left: 0;
     margin-top: 25px;
@@ -2403,38 +2403,38 @@ section,
 
 @media (max-width: 767px) {
 
-  #portfolio .mt-top-card {
+  #produk .mt-top-card {
     width: 100% !important;
     height: 220px !important;
   }
 
-  #portfolio .mt-top-image {
+  #produk .mt-top-image {
     height: 150px !important;
   }
 
-  #portfolio .mt-product-panel {
+  #produk .mt-product-panel {
     padding: 20px;
   }
 
-  #portfolio .mt-panel-text h3 {
+  #produk .mt-panel-text h3 {
     font-size: 24px;
   }
 
-  #portfolio .mt-panel-text p,
-  #portfolio .mt-panel-text ul li {
+  #produk .mt-panel-text p,
+  #produk .mt-panel-text ul li {
     font-size: 14px;
   }
 }
 
 /* Aksesibilitas: kurangi animasi jika diminta */
 @media (prefers-reduced-motion: reduce) {
-  #portfolio .mt-top-card,
-  #portfolio .mt-top-image,
-  #portfolio .mt-products-shell {
+  #produk .mt-top-card,
+  #produk .mt-top-image,
+  #produk .mt-products-shell {
     transition: none !important;
   }
 
-  #portfolio .mt-product-panel {
+  #produk .mt-product-panel {
     animation: none !important;
   }
 }
@@ -2494,28 +2494,28 @@ section,
    CONTACT - MUJUR TIMBER
 ========================================= */
 
-#contact {
+#kontak {
   background: #f6f8fb;
   padding: 65px 0;
 }
 
-#contact .section-title {
+#kontak .section-title {
   padding-bottom: 25px !important;
 }
 
 /* Informasi alamat */
-#contact .mt-contact-info {
+#kontak .mt-contact-info {
   margin-bottom: 40px;
 }
 
-#contact .mt-contact-info h3 {
+#kontak .mt-contact-info h3 {
   font-size: 25px;
   font-weight: 700;
   color: #24313a;
   margin-bottom: 15px;
 }
 
-#contact .mt-contact-info p {
+#kontak .mt-contact-info p {
   font-size: 16px;
   line-height: 1.75;
   color: #556270;
@@ -2523,7 +2523,7 @@ section,
 }
 
 /* Telepon, Fax, Email */
-#contact .mt-contact-line {
+#kontak .mt-contact-line {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -2532,27 +2532,27 @@ section,
   color: #556270;
 }
 
-#contact .mt-contact-line i {
+#kontak .mt-contact-line i {
   color: #ef4b2d;
   font-size: 22px;
   width: 26px;
 }
 
-#contact .mt-contact-line a {
+#kontak .mt-contact-line a {
   color: #556270;
   text-decoration: none;
 }
 
-#contact .mt-contact-line a:hover {
+#kontak .mt-contact-line a:hover {
   color: #ef4b2d;
 }
 
 /* Formulir */
-#contact .mt-contact-form {
+#kontak .mt-contact-form {
   width: 100%;
 }
 
-#contact .mt-contact-form h3 {
+#kontak .mt-contact-form h3 {
   font-size: 25px;
   font-weight: 700;
   line-height: 1.4;
@@ -2560,7 +2560,7 @@ section,
   margin-bottom: 12px;
 }
 
-#contact .mt-contact-form > p {
+#kontak .mt-contact-form > p {
   font-size: 15px;
   line-height: 1.7;
   color: #596575;
@@ -2568,11 +2568,11 @@ section,
 }
 
 /* Input Group */
-#contact .mt-form-group {
+#kontak .mt-form-group {
   margin-bottom: 20px;
 }
 
-#contact .mt-form-group label {
+#kontak .mt-form-group label {
   display: block;
   color: #e32620;
   font-size: 14px;
@@ -2581,8 +2581,8 @@ section,
 }
 
 /* Input dan textarea */
-#contact .mt-form-group input,
-#contact .mt-form-group textarea {
+#kontak .mt-form-group input,
+#kontak .mt-form-group textarea {
   width: 100%;
   padding: 13px 15px;
   font-size: 16px;
@@ -2596,20 +2596,20 @@ section,
   transition: all 0.25s ease;
 }
 
-#contact .mt-form-group textarea {
+#kontak .mt-form-group textarea {
   resize: vertical;
   min-height: 150px;
 }
 
-#contact .mt-form-group input:focus,
-#contact .mt-form-group textarea:focus {
+#kontak .mt-form-group input:focus,
+#kontak .mt-form-group textarea:focus {
   background: #ffffff;
   border-color: #ef4b2d;
   box-shadow: 0 0 0 3px rgba(239,75,45,0.1);
 }
 
 /* Submit Button */
-#contact .mt-submit-btn {
+#kontak .mt-submit-btn {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -2626,7 +2626,7 @@ section,
   transition: background 0.3s ease;
 }
 
-#contact .mt-submit-btn:hover {
+#kontak .mt-submit-btn:hover {
   background: #b71e19;
 }
 
@@ -2716,19 +2716,19 @@ section,
     margin-bottom: 12px;
   }
 
-  #contact .mt-contact-form {
+  #kontak .mt-contact-form {
     margin-top: 5px;
   }
 }
 
 @media (max-width: 767px) {
   #faq,
-  #contact {
+  #kontak {
     padding: 45px 0;
   }
 
-  #contact .mt-contact-info h3,
-  #contact .mt-contact-form h3 {
+  #kontak .mt-contact-info h3,
+  #kontak .mt-contact-form h3 {
     font-size: 22px;
   }
 
@@ -3087,22 +3087,22 @@ section,
    PERBAIKAN TAMPILAN FORMULIR KONTAK
 ========================================= */
 
-#contact .mt-contact-form {
+#kontak .mt-contact-form {
   width: 100%;
 }
 
-#contact .mt-contact-form form {
+#kontak .mt-contact-form form {
   width: 100%;
 }
 
-#contact .mt-contact-form .mt-form-group {
+#kontak .mt-contact-form .mt-form-group {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-bottom: 18px;
 }
 
-#contact .mt-contact-form .mt-form-group label {
+#kontak .mt-contact-form .mt-form-group label {
   display: block;
   width: 100%;
   margin-bottom: 8px;
@@ -3111,8 +3111,8 @@ section,
   font-weight: 600;
 }
 
-#contact .mt-contact-form .mt-form-group input,
-#contact .mt-contact-form .mt-form-group textarea {
+#kontak .mt-contact-form .mt-form-group input,
+#kontak .mt-contact-form .mt-form-group textarea {
   display: block;
   width: 100%;
   padding: 13px 15px;
@@ -3125,12 +3125,12 @@ section,
   box-sizing: border-box;
 }
 
-#contact .mt-contact-form .mt-form-group textarea {
+#kontak .mt-contact-form .mt-form-group textarea {
   min-height: 150px;
   resize: vertical;
 }
 
-#contact .mt-contact-form .mt-submit-btn {
+#kontak .mt-contact-form .mt-submit-btn {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -3146,7 +3146,7 @@ section,
   cursor: pointer;
 }
 
-#contact .mt-contact-form .mt-submit-btn:hover {
+#kontak .mt-contact-form .mt-submit-btn:hover {
   background-color: #b71e19;
 }
 /* ==========================================
@@ -3154,18 +3154,18 @@ section,
    Mengikuti variabel desain utama website
 ========================================== */
 
-#contact .mt-contact-form {
+#kontak .mt-contact-form {
   width: 100%;
 }
 
-#contact .mt-contact-form form {
+#kontak .mt-contact-form form {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 16px;
 }
 
-#contact .mt-form-group {
+#kontak .mt-form-group {
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -3174,7 +3174,7 @@ section,
   gap: 7px;
 }
 
-#contact .mt-form-group label {
+#kontak .mt-form-group label {
   display: block;
   width: 100%;
   margin: 0;
@@ -3185,8 +3185,8 @@ section,
   line-height: 1.5;
 }
 
-#contact .mt-form-group input,
-#contact .mt-form-group textarea {
+#kontak .mt-form-group input,
+#kontak .mt-form-group textarea {
   display: block;
   width: 100%;
   min-width: 0;
@@ -3196,11 +3196,11 @@ section,
   font-size: 15px;
 }
 
-#contact .mt-form-group textarea {
+#kontak .mt-form-group textarea {
   min-height: 150px;
 }
 
-#contact .mt-submit-btn {
+#kontak .mt-submit-btn {
   width: 100%;
   display: flex;
   justify-content: center;
