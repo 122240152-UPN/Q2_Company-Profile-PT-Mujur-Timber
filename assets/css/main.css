@@ -3086,3 +3086,216 @@ section,
     padding: 20px 0;
   }
 }
+/* =========================================
+   PERBAIKAN TAMPILAN FORMULIR KONTAK
+========================================= */
+
+#contact .mt-contact-form {
+  width: 100%;
+}
+
+#contact .mt-contact-form form {
+  width: 100%;
+}
+
+#contact .mt-contact-form .mt-form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+#contact .mt-contact-form .mt-form-group label {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  color: #e32620;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#contact .mt-contact-form .mt-form-group input,
+#contact .mt-contact-form .mt-form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 13px 15px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #24313a;
+  background-color: #e6e8eb;
+  border: 1px solid #d5d9de;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#contact .mt-contact-form .mt-form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+#contact .mt-contact-form .mt-submit-btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 25px;
+  color: #ffffff;
+  background-color: #d92520;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#contact .mt-contact-form .mt-submit-btn:hover {
+  background-color: #b71e19;
+}
+/* ==========================================
+   PERBAIKAN FORMULIR KONTAK
+========================================== */
+
+#contact .mt-form-group {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#contact .mt-form-group label {
+  display: block !important;
+  width: 100%;
+  margin-bottom: 8px;
+  color: #e32620;
+  font-family: inherit;
+}
+
+#contact .mt-form-group input,
+#contact .mt-form-group textarea {
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+#contact .mt-submit-btn {
+  display: flex !important;
+  width: 100%;
+  font-family: inherit;
+}
+
+
+/* ==========================================
+   CALL TO ACTION - JELAJAHI PRODUK
+   Identitas visual Mujur Timber
+========================================== */
+
+#call-to-action.produk-cta-section {
+  background: #12213b;
+  padding: 65px 0;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+#call-to-action .produk-cta-label {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #ef4b2d;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+#call-to-action h2 {
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+#call-to-action h2 span {
+  color: #ef4b2d;
+}
+
+#call-to-action p {
+  color: #e1e5eb;
+  font-size: 15px;
+  line-height: 1.75;
+  margin-bottom: 25px;
+}
+
+#call-to-action .produk-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 28px;
+  background: #ef4b2d;
+  color: #ffffff;
+  border: 1px solid #ef4b2d;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#call-to-action .produk-cta-button:hover {
+  background: transparent;
+  color: #ef4b2d;
+}
+
+#call-to-action .produk-cta-visual {
+  position: relative;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#call-to-action .produk-cta-circle {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ef4b2d;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  color: #ef4b2d;
+  font-size: 65px;
+  z-index: 2;
+}
+
+#call-to-action .produk-cta-decoration {
+  position: absolute;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+}
+
+#call-to-action .decoration-one {
+  width: 210px;
+  height: 210px;
+}
+
+#call-to-action .decoration-two {
+  width: 260px;
+  height: 260px;
+}
+
+@media (max-width: 767px) {
+  #call-to-action.produk-cta-section {
+    padding: 45px 0;
+  }
+
+  #call-to-action h2 {
+    font-size: 26px;
+  }
+
+  #call-to-action .produk-cta-visual {
+    min-height: 200px;
+  }
+}
